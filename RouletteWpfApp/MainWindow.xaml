@@ -1,0 +1,61 @@
+﻿<Window x:Class="RouletteWpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RouletteWpfApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="480" Width="640">
+    <Grid x:Name="_Board" Background="Black">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+
+        <!-- Green -->
+        <Label x:Name="_0" Grid.Row="0" Grid.Column="0" Grid.RowSpan="3" BorderBrush="White" BorderThickness="2" Background="Green" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">0</Label>
+        
+        <!-- Numbers are generated via code -->
+
+        <!-- Row multipliers -->
+        <Label x:Name="_RowC" Grid.Row="2" Grid.Column="13" BorderBrush="White" BorderThickness="2" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">2 to 1</Label>
+        <Label x:Name="_RowB" Grid.Row="1" Grid.Column="13" BorderBrush="White" BorderThickness="2" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">2 to 1</Label>
+        <Label x:Name="_RowA" Grid.Row="0" Grid.Column="13" BorderBrush="White" BorderThickness="2" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">2 to 1</Label>
+
+
+        <!-- Bottom indicators -->
+        <Label x:Name="_1st12" BorderBrush="White" BorderThickness="2" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="4" Background="Black" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">1st 12</Label>
+        <Label x:Name="_2nd12" BorderBrush="White" BorderThickness="2" Grid.Row="3" Grid.Column="5" Grid.ColumnSpan="4" Background="Black" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">2nd 12</Label>
+        <Label x:Name="_3rd12" BorderBrush="White" BorderThickness="2" Grid.Row="3" Grid.Column="9" Grid.ColumnSpan="4" Background="Black" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">3rd 12</Label>
+
+        <Label x:Name="_Low" BorderBrush="White" BorderThickness="2" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" Background="Black" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">1 to 18</Label>
+        <Label x:Name="_Even" BorderBrush="White" BorderThickness="2" Grid.Row="4" Grid.Column="3" Grid.ColumnSpan="2" Background="Black" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">Even</Label>
+        <Label x:Name="_Black" BorderBrush="White" BorderThickness="2" Grid.Row="4" Grid.Column="5" Grid.ColumnSpan="2" Background="Black" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">Black</Label>
+        <Label x:Name="_Red" BorderBrush="White" BorderThickness="2" Grid.Row="4" Grid.Column="7" Grid.ColumnSpan="2" Background="Red" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">Red</Label>
+        <Label x:Name="_Odd" BorderBrush="White" BorderThickness="2" Grid.Row="4" Grid.Column="9" Grid.ColumnSpan="2" Background="Black" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">Odd</Label>
+        <Label x:Name="_High" BorderBrush="White" BorderThickness="2" Grid.Row="4" Grid.Column="11" Grid.ColumnSpan="2" Background="Black" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">19 to 36</Label>
+        
+        <!-- Pop-up -->
+        <Label x:Name="popupTextBlock" Visibility="Collapsed" BorderBrush="White" BorderThickness="2" Grid.Row="3" Grid.Column="12" Grid.ColumnSpan="2" Grid.RowSpan="2" Background="CornflowerBlue" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">WINNER</Label>
+    </Grid>
+</Window>
