@@ -56,6 +56,6 @@
         <Label x:Name="_High" BorderBrush="White" BorderThickness="2" Grid.Row="4" Grid.Column="11" Grid.ColumnSpan="2" Background="Black" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">19 to 36</Label>
         
         <!-- Pop-up -->
-        <Label x:Name="popupTextBlock" Visibility="Collapsed" BorderBrush="White" BorderThickness="2" Grid.Row="3" Grid.Column="12" Grid.ColumnSpan="2" Grid.RowSpan="2" Background="CornflowerBlue" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">WINNER</Label>
+        <Label x:Name="popupTextBlock" Visibility="Collapsed" BorderBrush="White" BorderThickness="2" Grid.Row="3" Grid.Column="12" Grid.ColumnSpan="2" Grid.RowSpan="2" Background="CornflowerBlue" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></Label>
     </Grid>
 </Window>
